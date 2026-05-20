@@ -1,7 +1,7 @@
 body { margin: 16px; background: #000000; color: #22aa44; font-family: "Lucida Console", monospace; }
 a { color: #5050ee; cursor: pointer; }
 .krasivo { color: #5050ee; word-break: break-all; }
-h1 { font-size: clamp(26pt, 2.5vw, 36pt); text-align: left; font-family: "Malgun Gothic"; max-width: 640px; }
+h1 { font-size: clamp(24pt, 2.5vw, 36pt); text-align: left; font-family: "Malgun Gothic"; max-width: 640px; }
 h2 { font-size: 10pt; text-align: center; }
 footer { font-size: clamp(18pt, 2vw, 20pt); text-align: center; }
 button { font-size: 16pt; font-family: "Lucida Console", monospace; background: #000000; color: #5050ee; cursor: pointer }
@@ -9,4 +9,6 @@ footer button { font-size: 20pt; }
 dialog { background: #000000; color: #22aa44; font-family: "Lucida Console", monospace; font-size: 20pt; text-align: center; }
 textarea { background: #000000; color: #fff; }
 div { margin: 0 auto; max-width: 1280px; }
-div .ascii { font-size: clamp(1px, 2vw, 14px); text-align: center; }
+div .ascii { font-size: clamp(1px, 2vw, 13px); text-align: center; }
+@keyframes blink { 50% { opacity: 0; } }
+.blink { animation: blink 1s step-start infinite; }
