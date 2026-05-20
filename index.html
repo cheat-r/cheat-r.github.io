@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="cheat.css"/>
 </head>
 <body>
-    <div><h1> > cheat_r's website <span class="blink">_</span></h1>
+    <div class="border"><h1> > cheat_r's website <span class="blink">_</span></h1>
     <p align="center">Не уверен, что кто-либо когда-либо читал этот текст. Возможно, вы первый, кто это сделал!</p>
     <p align="center">Если этот сайт недоступен, значит GitHub уже заблокировали! Трубите тревогу, поднимайте селфхост сервера...</p>
     <div class="ascii"><pre>
@@ -46,6 +46,7 @@
                   #@@.                                                
     </pre></div>
     <footer>
+      <a title="...вы же за этим пришли?" onclick="aboutme.showModal()">обо мне</a> /
       <a title="@ch_cheat_r on tg" onclick="tg_main.showModal()">творчество</a> /
       <a title="@shitpost_r on tg" onclick="tg_rants.showModal()">блог</a> /
       <a title="killmyself.ru/ugrnd" onclick="location.href='https://killmyself.ru/ugrnd'">дискорд</a> /
@@ -67,6 +68,20 @@
     </footer>
     </div>
     <!-- диалоговые окна для кнопок в футере -->
+    <dialog id="aboutme">
+			<h2>Приятно познакомиться!</h2>
+      <div class="about">
+      Меня зовут Читераст, однако за мной закрепились и другие прозвища, как, например, Тархун.<br>
+      Как вы заметили, я занимаюсь... всяким. Я сделал этот простенький вебсайт, а ещё пишу ботов в Telegram и Discord. Относительно простеньких, но всё же.<br>
+      Интересы у меня специфичные, от разных нишевых медиа по типу OneShot или Keep Your Hands Off Eizouken! до копания в железках, как позволяют имеющиеся инструменты.<br>
+      Манера общения по большей части непринуждённая, но раскрываюсь я, когда завязывается разговор по моей теме.<br>
+      <br>
+      У меня много где есть аккаунты, все их можно найти по моему основному юзернейму @cheat_r. Ну или @cheat-r, если нижние подчёркивания нельзя ставить, например в GitHub.<br>
+      ...даже не пытайтесь найти меня в твиттере.
+      </div>
+			<p></p>
+			<button onclick="aboutme.close()">Закрыть окно</button>
+		</dialog>
     <dialog id="tg_main">
       <a href="tg://resolve?domain=ch_cheat_r">Открыть в Telegram</a>
       или
