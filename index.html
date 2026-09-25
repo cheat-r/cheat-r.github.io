@@ -1,91 +1,122 @@
 <!DOCTYPE html>
 <html>
-<head>
+
+  <head>
+    <title>cheat_r's website</title>
+    <link rel="icon" type="image/png" href="favicon.png"/>
+    <link rel="stylesheet" href="cheat.css"/>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/icon" href="favicon.png"/>
-    <title>cheat_r's website</title>
-    <link rel="stylesheet" href="cheat.css"/>
-</head>
-<body>
-    <div class="border"><h1> > cheat_r's website <span class="blink">_</span></h1>
-    <p>С каждым днём всё сложнее понимать как жить дальше.</p>
-    <div class="ascii"><pre>
-         @                                                            
-        .@@                    @          @                           
-        .@@.                @@%         -@@                           
-       +@@@@@*            @@=          *@@@                           
-       #@@@@@%          :@@@-   @@-  @ @@@@                           
-       #@@@@@%    -@@@@@@@@@@@@  *@@@@@@@@@@@@@%                      
-       #@@@@@%   @@@@@@@@@@@@@@@  *@@@    @@@@@@@                     
-       #@@@@@@ @@@@@   %@@@@@%  @@@@  @@@%  @@@@@@@@%                 
-       #@@@  =@@@    @ +@@@@@@@@@@@@ @@@@@@  +@@@@@@@@                
-       @@ @@@@@@  +@@@@- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*             
-        -@@@@@@  @@@@@@+  @@@@@@@@@@@@@@@%             @%             
-       #@@@@@@@@@@@@       @@@@@@@@@   +@@@@@@@@@@-  @ @@@@           
-      @@@@@@@@@@@   @@@@@@@     @@@% @@@@@@@@@@@@@@@@@ @@@@@          
-      @@@@@@@@@@@ +@@@@@@@@@:    *@+ .@@@@@@@@@@...  @@@@@@@          
-     @@@@@@@@@@@@ +@@@@@@@@@@@@  @@@@            @@@@@@@@@@@@+        
-     @@@@@@@@@@@@@-            @@@@@@@@@@@@ @@@@@@@@@@@@@@@@@*        
-    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@       
-    @@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@  +@@@@@@@@ @@@@@@@@@      
-    @@@@@@@@@@@@@@@@@@@@@@@@@@@ @.#@@@@@@@@    @@@@@@@ #@@@@@@@@      
-    .@@@@@@@@@@@@@@@@@@*=@@@@@@@@@@@:@@@@@@    @@@@@@@@ -@@@@@@@      
-     @@@@@@@@@@@@@@@@@@=   @@@@@@@@@  @@@@@    @@@@@@@@.-@@@@@@@      
-     :@@@@@@@@@@@@@@@@@@@     :::@@@  .@@@@    @@@@@@@%     .:::      
-      @@@@@@@@@@@   @@@@@@              -@@    @@@@@@@@@#             
-       #@@@@@@@@@@+  @@@@@@@:                  @@@@@@@@@#             
-         @@@@@@@@@@@ @@@@@@@@@@                 @@@@@@@@#             
-          @@@@@@@@@@@  %@@@@@@@@@@:             @@@@@@@@#             
-           @@@@@@@@@@@   @@@@@@@@@@@@           @@@@@@@.              
-             *@@@@@@@@    :@@@@@@@@@@@@@%%%%%%%%@@@@@@:               
-               @@@@@@@       =@@@@@@@@@@@@@@@@@@@@@@@@                
-               :@@@@@@         :@@@@@@@@@@@@@@@@@@@@@:                
-                @@@@@@           @@@@@@@@@@@@@@@@@-                   
-                  #@@.                                                
-    </pre></div>
-    <footer>
-      <a title="...вы же за этим пришли?" onclick="aboutme.showModal()">обо мне</a> /
-      <a title="@ch_cheat_r on tg" onclick="tg_main.showModal()">творчество</a> /
-      <a title="@shitpost_r on tg" onclick="tg_rants.showModal()">блог</a> /
-      <a title="killmyself.ru/ugrnd" onclick="location.href='https://killmyself.ru/ugrnd'">дискорд</a> /
-		  <a title="ну... всякое" onclick="mail.showModal()">альт. связь</a>
+    <meta name="description" content="Интернет-страничка интернет-балбеса.">
 
-		  <p>
-        <a title="Баннер сайта; Нажми, чтобы открыть окно для копирования" onclick="banner.showModal()"><img src="88x31.gif" style="cursor:pointer"></a>
-        <a title="balls" onclick="location.href='https://login.corp.google.com/c/balls.gif'"><img src="https://login.corp.google.com/c/balls.gif" width="88" height="31" style="cursor:pointer; object-fit: contain"></a>
-      </p>
+		<meta property="og:title" content="cheat_r's website">
+		<meta property="og:description" content="Интернет-страничка интернет-балбеса.">
+		<meta property="og:image" content="funny.jpg">
+  </head>
 
-      <div class="webring-bar">
-        <a class="webring-left" id="neighPrev" title="Предыдущий" onclick="location.href='https://otor.ing/cheat-r/prev'">&lt;</a>
-        <a class="webring-center" title="webring.otomir23.me" onclick="location.href='https://otor.ing'">otoring</a>
-        <a class="webring-right" id="neighNext" title="Следующий" onclick="location.href='https://otor.ing/cheat-r/next'">&gt;</a>
-      </div>
-      
-      <!-- скрипт для подгрузки соседей по вебрингу, поскольку того требует шедевро-healthcheck -->
-      <script>
-        async function loadNeighbors() {
-          try {
-            const responsePrev = await fetch("https://webring.otomir23.me/cheat-r/prev/data");
-            const responseNext = await fetch("https://webring.otomir23.me/cheat-r/next/data");
-            
-            const neighPrev = await responsePrev.json();
-            const neighNext = await responseNext.json();
+  <body>
+    <div class="border">
+      <h1> > cheat_r's website <span class="blink">_</span></h1>
+      <p class="js-only">С каждым днём всё сложнее понимать как жить дальше.</p>
+      <noscript>
+        <p>У вас выключен Javascript. Вам есть от кого скрываться?</p>
+      </noscript>
+      <div class="ascii"><pre>
+                ---============---:
+            ==-.                   .:-+=
+         :+:                            :=+
+       *@%                                 :*
+     +@-                                     =-
+    %-                               :@@@@@*. :=
+  .@:  +@@@@+.                     .%%    +@@@=:=
+  -- +%    %@@@+                  :@.     +@@@@=#
+  * #@     @@@@@                  @@:    +@@@@@+--
+ +..@@-  =@@@@@@                  :@@@@@@@@@@@@:--
+ %  %@@@@@@@@@@=                    .*@@@@@@%-*:*
+ %  +==%@@@@@#.        .=++-.         ==......-+#
+ % .=.......+-       =@@@@@@@@=       =-.......%.
+ # -=.......+-      =%*###*+=:=-      +-......=@
+  #-+.......+:      :+=:::::--=.      *-.....--+
+   @=.......+-                        =:....=-
+   -@=......+-                       :=...-#
+   .- =*....+=                       ++:%*
+    -.   =@@@+                    ..-*=     ==
+        .@+ .+%**+++=---------=+++-         .=
+       .@       *.                   ..     .=
+       #      .#                      -=++@-:
+        ::-***-                           @
+            =:                            @
+            -.                            *.
+            :.                            *.
+            -.                            @
+            ==                           @
+             =.      -++++++++++=*      :=
+              +-    :.            *     #
+                ==-==              -===-
+      </pre></div>
+      <footer>
+        <div class="js-only">
+          <a title="...вы же за этим пришли?" onclick="aboutme.showModal()">обо мне</a> /
+          <a title="@ch_cheat_r on tg" onclick="tg_main.showModal()">творчество</a> /
+          <a title="@shitpost_r on tg" onclick="tg_rants.showModal()">блог</a> /
+          <a title="killmyself.ru/ugrnd" onclick="location.href='https://killmyself.ru/ugrnd'">дискорд</a> /
+          <a title="ну... всякое" onclick="mail.showModal()">альт. связь</a>
 
-            const buttonPrev = "< " + neighPrev.previous.name;
-            const buttonNext = neighNext.next.name + " >";
-            document.getElementById("neighPrev").textContent = buttonPrev;
-            document.getElementById("neighNext").textContent = buttonNext;
+          <p>
+            <a title="Баннер сайта; Нажми, чтобы открыть окно для копирования" onclick="banner.showModal()"><img src="88x31.gif" style="cursor:pointer"></a>
+            <a title="balls" onclick="location.href='https://login.corp.google.com/c/balls.gif'"><img src="https://login.corp.google.com/c/balls.gif" width="88" height="31" style="cursor:pointer; object-fit: contain"></a>
+          </p>
 
-          } catch (error) {
-            console.error("Не удалось загрузить соседей:", error);
+          <div class="webring-bar">
+            <a class="webring-left" id="neighPrev" title="Предыдущий" onclick="location.href='https://otor.ing/cheat-r/prev'">&lt;</a>
+            <a class="webring-center" title="webring.otomir23.me" onclick="location.href='https://otor.ing'">otoring</a>
+            <a class="webring-right" id="neighNext" title="Следующий" onclick="location.href='https://otor.ing/cheat-r/next'">&gt;</a>
+          </div>
+        </div>
+
+        <!-- скрипт для подгрузки соседей по вебрингу, поскольку того требует шедевро-healthcheck -->
+        <script>
+          async function loadNeighbors() {
+              const responsePrev = await fetch("https://webring.otomir23.me/cheat-r/prev/data");
+              const responseNext = await fetch("https://webring.otomir23.me/cheat-r/next/data");
+
+              const neighPrev = await responsePrev.json();
+              const neighNext = await responseNext.json();
+
+              const buttonPrev = "< " + neighPrev.previous.name;
+              const buttonNext = neighNext.next.name + " >";
+              document.getElementById("neighPrev").textContent = buttonPrev;
+              document.getElementById("neighNext").textContent = buttonNext;
           }
-        }
 
-        loadNeighbors();
-      </script>
+          loadNeighbors();
+        </script>
 
-    </footer>
+        <noscript>
+          <style>
+            .js-only { display: none; }
+          </style>
+          <a title="тут должно было быть описание обо мне, но у вас выключен javascript :P" href="https://t.me/cheat_r">личка в тг</a> /
+          <a title="@ch_cheat_r on tg" href="https://t.me/ch_cheat_r">творчество</a> /
+          <a title="@shitpost_r on tg" href="https://t.me/shitpost_r">блог</a> /
+          <a title="[уголок рандома]!" href="ugrnd">дискорд</a> /
+          <a title="...ибо почему нет" href="mailto:cheat_r@killmyself.ru">почта</a> /
+          <a title="proudly selfhosted UwU" href="https://matrix.to/#/@cheat_r:killmyself.ru">личка в matrix</a>
+        
+          <p>
+            <a title="Баннер сайта"><img src="88x31.gif" style="cursor:pointer"></a>
+            <a title="balls"><img src="https://login.corp.google.com/c/balls.gif" width="88" height="31" style="cursor:pointer; object-fit: contain"></a>
+          </p>
+
+          <div class="webring-bar">
+            <a class="webring-left" id="neighPrev" title="Предыдущий" href="https://otor.ing/cheat-r/prev">&lt;</a>
+            <a class="webring-center" title="т.н. оторинг" href="https://otor.ing">otoring</a>
+            <a class="webring-right" id="neighNext" title="Следующий" href="https://otor.ing/cheat-r/next">&gt;</a>
+          </div>
+        </noscript>
+
+      </footer>
     </div>
     <!-- диалоговые окна для кнопок в футере -->
     <dialog id="aboutme">
@@ -134,5 +165,6 @@
 			<p></p>
 			<button onclick="banner.close()">Закрыть окно</button>
 		</dialog>
-</body>
+  </body>
+
 </html>
